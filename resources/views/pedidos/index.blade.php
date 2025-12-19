@@ -38,8 +38,8 @@
         <thead style="background:#7b113a; color:white;">
         <tr>
             <th>Cliente</th>
-            <th>Arreglo</th>
-            <th>Entrega</th>
+            <th>Tipo de Arreglo</th>
+            <th>Fecha de Entrega</th>
             <th>Estado</th>
             <th class="text-center">Acciones</th>
             <th class="text-center" style="width: 120px;">Archivar</th>

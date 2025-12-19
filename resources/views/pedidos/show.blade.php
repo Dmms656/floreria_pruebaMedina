@@ -14,7 +14,12 @@
             <p><strong>Fecha Entrega:</strong> {{ $pedido->fecha_entrega->format('d/m/Y') }}</p>
             <p><strong>Estado:</strong> {{ ucfirst($pedido->estado) }}</p>
             <p><strong>Notas:</strong> {{ $pedido->notas }}</p>
+
             <p><strong>Registrado:</strong> {{ $pedido->created_at->format('d/m/Y H:i') }}</p>
+
+            <p><strong>Última modificación:</strong>
+                {{ $pedido->updated_at->format('d/m/Y H:i') }}
+            </p>
 
             <a href="{{ route('pedidos.index') }}" class="btn btn-secondary">
                 Volver

@@ -21,7 +21,8 @@ class Pedido extends Model
 
     protected $casts = [
         'fecha_entrega' => 'date',
-        'created_at' => 'datetime',
-        'archived_at' => 'datetime'
+        'created_at'    => 'datetime',
+        'updated_at'    => 'datetime',
+        'archived_at'   => 'datetime'
     ];
 }
