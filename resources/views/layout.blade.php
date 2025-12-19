@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Flores del Valle</title>
 
     {{-- Bootstrap --}}
@@ -47,7 +50,6 @@
             font-size: 0.85rem;
         }
 
-
         ::-webkit-scrollbar-thumb {
             background-color: #b2184c;
         }
@@ -65,11 +67,11 @@
     </div>
 </nav>
 
-<div class="container mb-5">
+<div class="container-fluid px-3 px-md-5 mb-5">
     @yield('content')
 </div>
 
-<footer>
+<footer class="pb-4">
     © {{ date('Y') }} Flores del Valle
 </footer>
 

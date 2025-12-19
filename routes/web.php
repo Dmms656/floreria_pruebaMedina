@@ -7,10 +7,13 @@ Route::get('/', function () {
     return redirect()->route('pedidos.index');
 });
 
-// Ruta para ver pedidos archivados
 Route::get('pedidos/archivados',
     [PedidoController::class, 'archivados'])
     ->name('pedidos.archivados');
 
-//CRUD completo de pedidos
+Route::delete(
+    'pedidos/{pedido}/delete-permanent',
+    [PedidoController::class, 'forceDelete'])
+    ->name('pedidos.forceDelete');
+
 Route::resource('pedidos', PedidoController::class);
