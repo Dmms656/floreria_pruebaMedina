@@ -81,7 +81,4 @@
 
 </div>
 
-<div class="mt-4">
-    <button class="btn btn-success">Guardar</button>
-    <a href="{{ route('pedidos.index') }}" class="btn btn-secondary">Cancelar</a>
-</div>
+

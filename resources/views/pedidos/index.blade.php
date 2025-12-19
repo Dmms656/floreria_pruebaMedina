@@ -19,7 +19,7 @@
             <a href="{{ route('pedidos.archivados') }}"
                class="btn btn-outline-secondary"
                style="border-radius:30px;">
-                📁 Ver Archivados
+                Ver Archivados
             </a>
 
             <a href="{{ route('pedidos.create') }}"

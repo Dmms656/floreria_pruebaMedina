@@ -39,7 +39,7 @@
             color: #b2184c;
             font-weight: bold;
         }
-        
+
         footer {
             text-align: center;
             color: #8a8a8a;
@@ -60,7 +60,7 @@
 <nav class="navbar navbar-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="{{ route('pedidos.index') }}">
-            🌸 Flores del Valle
+            Flores del Valle
         </a>
     </div>
 </nav>
