@@ -73,3 +73,4 @@
         {{ $pedidos->links() }}
     </div>
 
+@endsection
