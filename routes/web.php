@@ -1,17 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
-use Laravel\Fortify\Features;
+use App\Http\Controllers\PedidoController;
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canRegister' => Features::enabled(Features::registration()),
-    ]);
-})->name('home');
+    return redirect()->route('pedidos.index');
+});
 
-Route::get('dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Ruta para ver pedidos archivados
+Route::get('pedidos/archivados',
+    [PedidoController::class, 'archivados'])
+    ->name('pedidos.archivados');
 
-require __DIR__.'/settings.php';
+//CRUD completo de pedidos
+Route::resource('pedidos', PedidoController::class);
